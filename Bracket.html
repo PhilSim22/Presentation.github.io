@@ -1,0 +1,73 @@
+<!-- Commentaire -->
+		<!-- Auteur: Mathias Langlois -->
+		<!-- Projet: Laboratoire -->
+		<!-- But:-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="./Css/Fin de Session.css">
+		<meta charset="utf-8">
+		<title>
+			Worlds Bracket
+		</title>
+		<script>
+			function ChangeImage(a)
+			{
+				document.getElementById("image").src = a
+			}
+		</script>
+	</head>
+	<body id="test">
+		<header>
+			<a href="./HomePage.html" id="HomePage">
+				HOME
+			</a>
+			<a href="./Bracket.html" id="Bracket">
+				BRACKET
+			</a>
+			<a href="./Favorite.html" id="Favorite">
+				FAVORITE
+			</a>
+			<a href="./Opening.html" id="Opening">
+				CEREMONY
+			</a>
+			<a href="https://na.leagueoflegends.com/en/" target="blank" id="League">
+					<img src="./Image/LeagueOldLogo.jpg" alt="Logo" class="image" width="30px">
+			</a>
+		</header>
+		<main>
+			<div class="grid">
+				<div id="choices">
+					<div id="PlayGroups" onclick="ChangeImage('./Image/Bracket3.jpg')">
+						Play in Groups
+					</div>
+					<div id="PlayKnockouts" onclick="ChangeImage('./Image/Bracket4.jpg')">
+						Play in Knockouts
+					</div>
+					<div id="Groups" onclick="ChangeImage('./Image/Bracket5.jpg')">
+						Groups
+					</div>
+					<div id="Knockouts" onclick="ChangeImage('./Image/Bracket2.jpg')">
+						Knockouts
+					</div>
+				</div>
+				<div id="bracket">
+					<img src="./Image/Bracket3.jpg" alt="Worlds bracket" class="image" id="image">
+				</div>
+			</div>
+		</main>
+		<footer>
+			<a href="https://www.facebook.com/leagueoflegends/" target="blank">
+				<img src="./Image/FacebookIcon.jpg" alt="Facebook" class="image" width="30px">
+			</a>
+			<a href="https://www.youtube.com/user/RiotGamesInc" target="blank">
+				<img src="./Image/YoutubeLogoDark.jpg" alt="Facebook" class="image" width="70px">
+			</a>
+			<a href="https://twitter.com/search?q=League%20of%20Legends&src=typeahead_click" target="blank">
+				<img src="./Image/twitterBird.jpg" alt="Twitter" class="image" width="30px">
+			</a>
+			<a href="https://fr.wikipedia.org/wiki/League_of_Legends" target="blank">
+				<img src="./Image/WikipediaLogo.jpg" alt="Wikipedia" class="image" width="50px">
+			</a>
+		</footer>
+	</body>
